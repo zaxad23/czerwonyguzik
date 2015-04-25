@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2015 by anonymous (http://jsbin.com/kululeqanu/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+#ej {
+  height:400px;
+  width: 400px;
+  background-color: red;
+  border-radius:360px;
+}
+
+:focus {
+  outline:none;
+} 
+::-moz-focus-inner {
+  border:0;
+}
+
+body {
+  font-family:Arial;
+}
+
+h1 {
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+  <center>
+    <div>
+      <button id="ej" onclick="tap()"></button>
+    </div>
+    <h1 id="tekst">NIE KLIKAJ GUZIKA</h1>
+  </center>
+<script id="jsbin-javascript">
+var teksty = [
+  "NIE KLIKAJ GUZIKA",
+  "NIE KLIKAJ",
+  "głupi jestes?",
+  "...czy gluchy?",
+  "kurde",
+  "nie",
+  "klikaj",
+  "guzika!",
+  "idiota",
+  "jeszcze raz klikniesz",
+  "spadaj",
+  "dobra klikaj se",
+  "dawaj",
+  "smialo",
+  "chyba, ze ci sie nudzi",
+  "klikasz czy nie?!",
+  "Masz mnie nie klikać!!!",
+  "Czy lubisz mnie wnerwiać?",
+  "No daj mi spokoj!", 
+  "Odczep się!", 
+  "Dlaczego mnie klikasz?",
+  "Chcesz wiedzieć co jest dalej?",
+  "Jeli chcesz to klikaj",
+  "No klikaj!",
+  "Na co czekasz??",
+  "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+    "KLIKAJ",
+  "No co zepsułem się?",
+  "To przez Ciebie!",
+  "Zawiesiłes mnie!",
+  " I co teraz będzie?",
+  "Umrę!",
+  "NIEEEE",
+  "NIEEEEEEEEEEEEEEE",
+  "NIEEEEEEEEEEEEEEEEEEEEEe",
+  "Czemu mi to zrobiłes",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+   "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Czemu?",
+  "Znowu mi tak zrobiłes??(znowu)",
+  "czekaj...",
+  "naprawiam się",
+  "naprawiam się",
+  "naprawiam się",
+  "naprawiam się",
+  "naprawiam się",
+  "naprawiam się",
+  "naprawiam się",
+  "ok juz",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "naprawiam się",
+  "naprawiam się",
+  "naprawiam się",
+  "naprawiam się",
+  "naprawiam się",
+  "naprawiam się",
+  "naprawiam się",
+  "ok juz",
+  "nadal sie nie znudziles?",
+  "serio?",
+  "¿oıɹǝs",
+  "¡sǝlnsdǝz ǝıuɯ nʍouz",
+  "¡sǝlnsdǝz ǝıuɯ nʍouz",
+  "¡sǝlnsdǝz ǝıuɯ nʍouz",
+  "¡sǝlnsdǝz ǝıuɯ nʍouz",
+  "¡sǝlnsdǝz ǝıuɯ nʍouz",
+  "¡sǝlnsdǝz ǝıuɯ nʍouz",
+  "¡sǝlnsdǝz ǝıuɯ nʍouz",
+  "¡sǝlnsdǝz ǝıuɯ nʍouz",
+  "KUR",
+  "o naprawiłem się"
+];
+
+var counter = 0;
+var l = teksty.length;
+
+function tap(){
+  if(counter+1<l){
+    counter++;
+  } else {
+    counter=0;
+  }
+  id("tekst").innerHTML = teksty[counter];
+  console.log(counter);
+}
+
+function id(ID){
+  return document.getElementById(ID);
+}
+</script>
+</body>
+</html>
